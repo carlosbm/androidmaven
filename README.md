@@ -17,3 +17,6 @@ This should create an APK for you which can then be installed.
 android.sdk.path=/opt/android-sdk on my system.
 
 http://maven-android-plugin-m2site.googlecode.com/svn/plugin-info.html
+=======
+androidmaven
+============
