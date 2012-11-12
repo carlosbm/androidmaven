@@ -19,5 +19,5 @@ android.sdk.path=/opt/android-sdk on my system.
 http://maven-android-plugin-m2site.googlecode.com/svn/plugin-info.html
 =======
 androidmaven
-Test the Jenkins Build
+Testing Jenkins Build
 ============
