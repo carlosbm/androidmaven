@@ -26,6 +26,26 @@
         <finalName>${project.artifactId}</finalName>
         <sourceDirectory>src</sourceDirectory>
         <plugins>
+<plugin>
+	<groupId>com.github.chrisprice</groupId>
+	<artifactId>phonegap-build-maven-plugin</artifactId>
+	<version>0.0.2</version>
+	<executions>
+		<execution>
+			<id>phonegap-build</id>
+			<!-- the goals are lifecycle bound by default -->
+			<goals>
+				<goal>clean</goal>
+				<goal>build</goal>
+			</goals>
+			<configuration>
+				<platforms>
+					<platform>android</platform>
+				</platforms>
+			</configuration>
+		</execution>
+	</executions>
+</plugin>
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -42,12 +62,11 @@
                 <version>3.0.0-alpha-13</version>
                 <configuration>
                     <sdk>
-                        <!-- platform or api level (api level 4 = platform 1.6)-->
+
 			<path>/Users/carlosbm/android-sdks/</path>
                         <platform>8</platform>
                     </sdk>
                     <emulator>
-                        <!-- the name of the avd device to use for starting the emulator -->
                         <avd>my_android</avd>
                     </emulator>
                     <deleteConflictingFiles>true</deleteConflictingFiles>
